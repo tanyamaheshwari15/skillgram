@@ -1,0 +1,100 @@
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+  color: #333;
+  line-height: 1.5;
+}
+
+/* Gradient Branding */
+.gradient-text {
+  font-size: 30px;
+  font-weight: bold;
+  background: linear-gradient(to right, #5f9aff, #fe7bf3);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Main Section */
+main {
+  margin-top: 40px; /* push content below navbar */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Post Form Container */
+.post-container {
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 600px;
+}
+
+.post-container h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  text-align: center;
+  color: #222;
+}
+
+/* Form Inputs */
+.post-container label {
+  display: block;
+  margin: 12px 0 6px;
+  font-weight: bold;
+  font-size: 14px;
+  color: #444;
+}
+
+.post-container input,
+.post-container textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  margin-bottom: 15px;
+  font-size: 14px;
+  background: #fdfdfd;
+  transition: border-color 0.3s;
+}
+
+.post-container input:focus,
+.post-container textarea:focus {
+  border-color: #5f9aff;
+  outline: none;
+}
+
+/* Submit Button */
+.submit-btn {
+  background: linear-gradient(to right, #5f9aff, #fe7bf3);
+  border: none;
+  padding: 12px;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100%;
+  transition: opacity 0.3s;
+}
+
+.submit-btn:hover {
+  opacity: 0.9;
+}

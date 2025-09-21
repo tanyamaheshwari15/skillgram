@@ -1,0 +1,131 @@
+ body {
+      margin: 0;
+      padding: 0;
+      font-family: "Poppins", sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: linear-gradient(to right, #5f9aff, #fe7bf3,rgb(253, 110, 144));
+    }
+
+    .gradient-text {
+  font-size: 40px;
+  font-weight: bold;
+  background: linear-gradient(to right, #5f9aff, #fe7bf3);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+    .login-container {
+      background: #fff;
+      padding: 40px;
+      border-radius: 15px;
+      width: 350px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+      text-align: center;
+    }
+
+    .login-container h1 {
+      margin-bottom: 5px;
+      font-size: 28px;
+      font-weight: 700;
+      color: #222;
+    }
+
+    .login-container p {
+      margin-bottom: 25px;
+      color: #555;
+      font-size: 14px;
+    }
+
+    .login-container h2 {
+      margin-bottom: 20px;
+      font-size: 20px;
+      font-weight: 600;
+      color: #333;
+    }
+
+    .login-container input {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 14px;
+    }
+
+    .login-container .forgot {
+      display: block;
+      text-align: right;
+      font-size: 12px;
+      margin-bottom: 15px;
+      color: #555;
+      text-decoration: none;
+    }
+
+    .login-container .login-btn {
+      width: 100%;
+      padding: 12px;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: 600;
+      color: #fff;
+      background: linear-gradient(to right, #5f9aff, #fe7bf3);
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .login-container .login-btn:hover {
+      opacity: 0.9;
+    }
+
+    .divider {
+      margin: 20px 0;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      color: #999;
+      font-size: 12px;
+    }
+
+    .divider::before, .divider::after {
+      content: '';
+      flex: 1;
+      border-bottom: 1px solid #ccc;
+    }
+
+    .divider:not(:empty)::before {
+      margin-right: .75em;
+    }
+
+    .divider:not(:empty)::after {
+      margin-left: .75em;
+    }
+
+    .google-btn {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 14px;
+      background: #fff;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+    }
+
+    .signup {
+      margin-top: 15px;
+      font-size: 14px;
+      color: #333;
+    }
+
+    .signup a {
+      text-decoration: none;
+      color: #4e54c8;
+      font-weight: 600;
+    }

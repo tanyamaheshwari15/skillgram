@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    background-color: #023b5c;
+    color: goldenrod;
+}
+
+#board {
+    margin: 20px auto;
+    display: grid;
+    gap: 2px;
+    background-color: rgb(111, 212, 252);
+    border: 10px solid darkgray;
+    padding: 5px;
+}
+
+#board div {
+    background-color: #fff;
+    border: 1px solid rgb(187, 255, 99);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    width: 48px;   /* Fixed block size */
+    height: 48px;  /* Fixed block size */
+    transition: background-color 0.3s ease;
+}
+
+.tile-clicked {
+    background-color: #d3d3d3;  /* Light gray to indicate clicked tiles */
+}
+
+.x1 { color: rgb(209, 7, 254); }
+.x2 { color: rgb(246, 238, 17); }
+.x3 { color: red; }
+.x4 { color: navy; }
+.x5 { color: brown; }
+.x6 { color: teal; }
+.x7 { color: black; }
+.x8 { color: gray; }
+
+#flag-button {
+    width: 100px;
+    height: 50px;
+    font-size: 30px;
+    background-color: lightgray;
+    border: none;
+    margin-top: 20px;
+}
+
+a , .btn{
+    background: #5c0220ee;
+    color: white;
+    border-radius: 9px;
+    border-style: none;
+    cursor: pointer;
+    padding: 15px 15px;
+    text-decoration: none;
+    position: relative;
+    left: 20px;
+    top: 0px;
+}
+.btn:hover , a:hover{
+    background-color: #3c1414;
+}
+@media (max-width: 600px) {
+    #board div {
+        width: 40px;
+        height: 40px;
+    }
+    #flag-button {
+        width: 80px;
+        height: 40px;
+    }
+}

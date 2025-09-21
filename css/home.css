@@ -1,0 +1,166 @@
+/* Reset & Box Sizing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body & Fonts */
+body {
+  font-family: -apple-system, system-ui, "Segoe UI", Roboto, Oxygen, Ubuntu,
+    Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+  margin: 0;
+  padding: 0;
+}
+
+/* Main Layout */
+main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.content-row {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+/* Columns */
+.col-9 { flex: 1 1 auto; min-width: 0; }
+.col-3 { flex: 0 0 320px; position: sticky; top: 90px; }
+
+/* Centered Text */
+.center-text { text-align: center; margin-bottom: 20px; }
+span { color: #fa5080; }
+
+h1 i {
+  margin-right: 8px;
+  color: #f1c905; 
+}
+
+/* Status Box */
+.statuses {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 100%;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  border-radius: 20px;
+  border: 1px solid rgb(218, 217, 217);
+  overflow: auto;
+}
+
+/* Cards */
+.card {
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+  padding: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover { 
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+}
+
+/* Card Top */
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.userDetails {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.profilepic .profile_img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  overflow: hidden;
+  padding: 2px;
+  background: linear-gradient(to right, red, orange);
+}
+
+.profilepic img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Post Image Box */
+.card imgBx {
+  width: 100%;
+  margin: 10px 0;
+  min-height: 400px;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.card imgBx img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Card Bottom */
+.bottom { padding-top: 10px; }
+
+.post-content { font-size: 15px; margin-bottom: 10px; }
+
+.actionBtns { display: flex; gap: 15px; align-items: center; }
+.actionBtns a { color: #5f9aff; text-decoration: none; }
+.actionBtns a:hover { text-decoration: underline; }
+
+.likes-count { font-weight: 500; color: #4d4d4f; font-size: 14px; }
+
+.postTime { font-size: 12px; color: #999; margin-top: 5px; text-transform: uppercase; }
+
+/* Suggestions */
+.col-3 h4 { color: rgb(100, 100, 100); }
+
+.follow-btn {
+  background: linear-gradient(to right, #5f9aff, #fe7bf3);
+  padding: 6px 12px;
+  border-radius: 8px;
+  color: white;
+  font-size: 13px;
+  text-decoration: none;
+}
+
+.follow-btn:hover {
+  opacity: 0.9;
+}
+
+
+/* Responsive */
+@media screen and (max-width: 1000px) {
+  .col-3 { display: none; }
+  .col-9 { width: 100%; background: #fafafa; }
+}
+
+@media screen and (max-width: 600px) {
+  .container { width: 100% !important; margin-top: 60px; }
+  .col-9 { margin-top: 4px; min-width: 100%; }
+  .statuses { margin-bottom: 10px; }
+  .col-9 .card { margin-bottom: 15px; width: 100%; border: none; }
+  .imgBx { min-height: 300px; }
+}

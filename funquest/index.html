@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>FUNQUEST STATION</title>
+
+  <script>
+    // detect IE8 and above, and edge
+    if (document.documentMode || /Edge/.test(navigator.userAgent)) {
+      alert('Please use Chrome or Firefox for best browsing experience!');
+    }
+  </script>
+
+  <!-- load CSS -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400">
+  <!-- Google web font "Open Sans" -->
+  <link rel="stylesheet" href="css/bootstrap.min.css"> <!-- https://getbootstrap.com/ -->
+  <link rel="stylesheet" href="css/fontawesome-all.min.css"> <!-- Font awesome -->
+  <link rel="stylesheet" href="slick/slick.css">
+  <link rel="stylesheet" href="slick/slick-theme.css">
+  <link rel="stylesheet" href="css/templatemo-style.css"> <!-- Templatemo style -->
+
+  <style>
+    h2 {
+        text-shadow: 3px 4px 4px rgba(0, 0, 0, 0.53);
+    }
+    img {
+            height: 420px;
+        }
+</style>
+</head>
+<body>
+  <div class="container"><br>
+    <section class="row tm-section-pb">
+      <div class="col-md-12 tm-bg-accent tm-gallery-pad tm-gallery-container mx-auto">
+        <div class="grid tm-gallery">
+          <figure class="effect-lexi tm-gallery-item">
+            <img src="img/2048.png" alt="Image" class="">
+            <figcaption>
+              <p><a href="2048.html" class="btn btn-danger">PLAY</a></p>
+            </figcaption>
+          </figure>
+          <figure class="effect-lexi tm-gallery-item">
+            <img src="img/hanoi.jpg" alt="Image" class="">
+            <figcaption>
+              <p><a href="hanoi.html" class="btn btn-danger">PLAY</a></p>
+            </figcaption>
+          </figure>
+          <figure class="effect-lexi tm-gallery-item">
+            <img src="img/minesweeper.jpeg" alt="Image" class="">
+            <figcaption>
+              <p><a href="minesweeper.html" class="btn btn-danger">PLAY</a></p>
+            </figcaption>
+          </figure>
+          <figure class="effect-lexi tm-gallery-item">
+            <img src="img/memory.jpeg" alt="Image" class="">
+            <figcaption>
+              <p><a href="card.html" class="btn btn-danger">PLAY</a></p>
+            </figcaption>
+          </figure>
+          <figure class="effect-lexi tm-gallery-item">
+            <img src="img/wordle.jpg" alt="Image" class="">
+            <figcaption>
+              <p><a href="wordle.html" class="btn btn-danger">PLAY</a></p>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <script src="js/jquery-3.2.1.slim.min.js"></script>
+  <script src="slick/slick.min.js"></script>
+  <script>
+
+    $(function () {
+      $('.tm-gallery').slick({
+        dots: true,
+        infinite: true,
+        slidesToShow: 4,
+        slidesToScroll: 2,
+        responsive: [
+          {
+            breakpoint: 991,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 2
+            }
+          },
+          {
+            breakpoint: 767,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          }
+          // You can unslick at a given breakpoint now by adding:
+          // settings: "unslick"
+          // instead of a settings object
+        ]
+      });
+    });
+
+  </script>
+</body>
+
+</html>
